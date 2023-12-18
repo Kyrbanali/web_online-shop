@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+  }
+header {
+    margin-top: 30px;
+}
+
+
+
+/* Стилизация заголовков */
+h1, h2, h3 {
+    color: #333;
+    text-align: center;
+}
+main{
+    margin-top: 30px;
+}
+/* Стилизация навигационного меню */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+nav ul li {
+    width: auto;
+    display:inline-flex;
+    margin: 10px;
+    font-size: 25px;
+}
+
+nav ul li a img{
+    height: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    
+}
+
+a {
+    &:hover{
+        
+    border-bottom: 3px red solid ;
+    }
+}
+
+.categories {
+    width: 100%;
+    margin: 0 auto;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+
+.Top_category h2{
+    margin: 0 auto;
+    
+}
+
+
+.category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: 20px 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+.category a h4 {
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    
+}
+
+h2 {
+    text-decoration: dashed;
+    width: 300px;
+    border-bottom: 5px dashed red;
+}
+
+.category a {
+    display: flex;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+}
+
+.category h4 span {
+    color: red;
+}
+
+.category img {
+    height: 100%;
+    max-height: 400px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+/* Стилизация подвала */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+form {
+    width: 200px;
+}
+.searcher{
+    display: flex;
+    flex-direction: row;
+}
+.searcherBtn{
+    height: 38px;
+    width: 38px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border:none;
+}
+.searcherImg{
+    width: 38px;
+    height: 38px;
+
+}
+input[type="search"] {
+    width: 200px;
+    padding: 8px 12px; /* настраиваем отступы внутри поля */
+    border-radius: 45px; /* добавляем скругления углов */
+    font-size: 16px; /* настраиваем размер шрифта */
+    box-shadow: none; /* удаляем стандартные тени поля */
+    background-image: url('img/search-icon.jpg'); /* добавляем изображение лупы */
+    background-position: 10px center; /* устанавливаем позицию изображения */
+    padding-left: 40px; /* добавляем отступ слева для изображения */
+}
